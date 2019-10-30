@@ -4,7 +4,7 @@ def abbreviation(name):
   string - to be converted into an abbreviation
   Returns:
   string - abbreviation
-  --- can also return a list if preferred by removing the join function.
+  Can also return a list if preferred by removing the join function.
   """
-    return '.'.join([i.upper()[0] for i in name.split()])
-print(function("a string here"))
+  return '.'.join([i.upper()[0] for i in name.split()])
+print(abbreviation("a string here"))
