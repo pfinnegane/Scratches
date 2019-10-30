@@ -1,7 +1,3 @@
-# 
-# @param string object
-# 
-
 def abbreviation(name):
   """Concatenates the first letter of each word in a string preceeded by a full stop.
   Arguments:
