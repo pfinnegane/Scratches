@@ -1,16 +1,19 @@
-var length = ( 6 * 3 ) - 2;
-var output = '';
+"use strict";
+
+const length = ( 6 * 2 ) - 1;
+let output = '';
 const reg = RegExp("^(?=.*\d{3})([a-zA-Z0-9]{6})\-([a-zA-Z0-9]{6})\-([a-zA-Z0-9]{6}){1}$");
+let newPassword;
 
 function apple(length) {
     output = '';
 
-    let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+    const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
     
-    for (var i = 0; i <= length; i++) {
-        var rnum = Math.floor(Math.random() * chars.length);
-        if(i % 6 == 0 && i/5 != 0) output += "-"
-        output += chars.substring(rnum,rnum+1);
+    for (let i = 0; i <= length; i++) {
+        let chars_index = Math.floor(Math.random() * chars.length);
+        if(i % 4 == 0 && i / 1 != 0) output += "-"
+        output += chars.substring(chars_index,chars_index+1);
     }
 
     return output;
