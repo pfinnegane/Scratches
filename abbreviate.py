@@ -1,5 +1,5 @@
 def abbreviation(name):
-  """abbrevation(sting) => string
+  """abbrevation(string) => string
   Concatenates the first letter of each word in a string preceeded by a full stop.
   Can also return a list if preferred by removing the join function.
     @param string - to be converted into an abbreviation
